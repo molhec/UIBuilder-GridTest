@@ -1,0 +1,9 @@
+VisualElement {
+}
+
+.slotIcon {
+    border-left-width: 69px;
+    border-right-width: 69px;
+    border-top-width: 69px;
+    border-bottom-width: 69px;
+}

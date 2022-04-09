@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="GridToolStyle.uss" />
+    <ui:VisualElement name="root">
+        <ui:Label text="Board Creator" display-tooltip-when-elided="true" name="title_label" style="font-size: 18px; -unity-text-align: middle-center; margin-top: 5px;" />
+        <uie:Vector2IntField label="GridSize" name="gridSize" />
+        <ui:Button text="Generate" display-tooltip-when-elided="true" name="generateButton" style="margin-left: 10%; margin-right: 10%; margin-top: 5px; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; width: 80%; align-items: auto; justify-content: flex-start; height: 27px;" />
+        <ui:VisualElement style="flex-grow: 1; flex-shrink: 0; align-items: center; flex-direction: row-reverse; margin-top: 0;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; width: auto; height: auto;">
+                <ui:VisualElement name="inventory" style="flex-grow: 1; align-items: center; justify-content: center; margin-right: 10px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; margin-left: 10px;">
+                    <ui:VisualElement name="grid" style="align-items: flex-start; justify-content: flex-end; width: 0; height: 0; flex-grow: 1; flex-wrap: wrap; flex-direction: row;" />
+                    <ui:VisualElement name="createScriptableContainer" style="width: 100%; visibility: visible;">
+                        <ui:TextField picking-mode="Ignore" label="Scriptable Object Name:" name="scriptableName" style="margin-top: 15px; display: flex; height: 20px; visibility: hidden;" />
+                        <ui:Button text="Create Scriptable Object" display-tooltip-when-elided="true" name="createScriptableButton" style="width: 80%; margin-left: 10%; margin-right: 10%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 20px; height: 40px; font-size: 14px; visibility: hidden; overflow: visible; display: flex;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
